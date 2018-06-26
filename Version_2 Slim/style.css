@@ -7,16 +7,6 @@
 }
 
 @font-face {
-    font-family: 'anurati';
-    src: url('fonts/Anurati-Regular.otf');
-}
-
-@font-face {
-    font-family: 'elianto';
-    src: url('fonts/Elianto-Regular.otf');
-}
-
-@font-face {
     font-family: 'montserrat';
     src: url('fonts/Montserrat-Regular.ttf');
 }
@@ -28,26 +18,6 @@
 *	Edit this section
 *
 * ======================================================= */
-
-
-/* == particles section -- Start == */
-
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #f7f7f7;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-
-/* == particles section -- End == */
 
 body {
     font-family: "Raleway", Arial, sans-serif;
@@ -61,14 +31,15 @@ body {
 }
 
 a {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
     transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #27E1CE;
+    background-color: rgb(73, 91, 123);
+    color: rgb(211, 217, 229);
     outline: none;
 }
 
@@ -91,17 +62,17 @@ figure {
 
  ::-webkit-selection {
     color: #fff;
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
 }
 
  ::-moz-selection {
     color: #fff;
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
 }
 
  ::selection {
     color: #fff;
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
 }
 
 .btn {
@@ -122,9 +93,9 @@ figure {
 }
 
 .btn-primary {
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
     color: #fff;
-    border: 2px solid #27E1CE;
+    border: 2px solid rgb(211, 217, 229);
 }
 
 .btn-primary:hover,
@@ -173,7 +144,7 @@ figure {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: #27E1CE;
+    border-color: rgb(211, 217, 229);
 }
 
 .farpoint-social {
@@ -203,7 +174,7 @@ figure {
 }
 
 .farpoint-social li a:hover {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 .farpoint-social li a:hover,
@@ -286,7 +257,7 @@ figure {
 }
 
 #farpoint-header h1 a>span {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-header h1 a:hover,
@@ -310,7 +281,7 @@ figure {
     content: '';
     width: 8px;
     height: 8px;
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -395,7 +366,7 @@ figure {
     bottom: 7px;
     left: 10px;
     right: 10px;
-    background-color: #27E1CE;
+    background-color: rgb(211, 217, 229);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -403,7 +374,7 @@ figure {
 
 #farpoint-header nav ul li a:hover {
     text-decoration: none;
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-header nav ul li a:hover:after {
@@ -426,14 +397,14 @@ figure {
     padding-right: 16px !important;
     padding-top: 7px !important;
     padding-bottom: 7px !important;
-    border: 2px solid #27E1CE;
-    color: #27E1CE;
+    border: 2px solid rgb(211, 217, 229);
+    color: rgb(211, 217, 229);
     border-radius: 30px;
 }
 
 #farpoint-header nav ul li.cta a:hover {
     color: #fff;
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
 }
 
 #farpoint-header nav ul li.cta a:hover:after {
@@ -566,7 +537,7 @@ figure {
     top: 0;
     left: 0;
     font-size: 40px;
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-services-section .services .desc {
@@ -657,7 +628,7 @@ figure {
 }
 
 .wrap-testimony .testimony-slide span a.twitter {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
     font-weight: 300;
 }
 
@@ -722,7 +693,7 @@ figure {
 
 .owl-carousel .owl-controls .owl-dot.active span {
     background: transparent;
-    border: 2px solid #27E1CE;
+    border: 2px solid rgb(211, 217, 229);
 }
 
 #farpoint-blog-section .item-grid {
@@ -859,11 +830,11 @@ figure {
     top: .3em;
     left: 0;
     font-size: 22px;
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 .contact-info li a {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #map {
@@ -1107,11 +1078,11 @@ figure {
 }
 
 #farpoint-offcanvas ul li a:hover {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-offcanvas ul li.active a {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-offcanvas ul li.cta {
@@ -1297,11 +1268,11 @@ figure {
 }
 
 #farpoint-pricing-section .price-box.popular .btn-select-plan {
-    background: #27E1CE;
+    background: rgb(211, 217, 229);
 }
 
 #farpoint-pricing-section .price-box.popular .price {
-    color: #27E1CE;
+    color: rgb(211, 217, 229);
 }
 
 #farpoint-pricing-section .price-box .btn-select-plan {
