@@ -327,12 +327,12 @@ figure {
     border-color: rgb(211, 217, 229);
 }
 
-.farpoint-social {
+.social {
     padding: 0;
     margin: 0;
 }
 
-.farpoint-social li {
+.social li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -342,7 +342,7 @@ figure {
     *display: inline;
 }
 
-.farpoint-social li a {
+.social li a {
     font-size: 22px;
     color: #fff;
     padding: 0;
@@ -358,13 +358,13 @@ figure {
     border-radius: 7px;
 }
 
-.farpoint-social li a:hover {
+.social li a:hover {
     color: rgb(211, 217, 229);
 }
 
-.farpoint-social li a:hover,
-.farpoint-social li a:active,
-.farpoint-social li a:focus {
+.social li a:hover,
+.social li a:active,
+.social li a:focus {
     outline: none;
     text-decoration: none;
 }
@@ -406,18 +406,18 @@ figure {
     }
 }
 
-#farpoint-header {
+#header {
     height: 130px;
     width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    #farpoint-header {
+    #header {
         margin: 0px 0 0 0;
     }
 }
 
-#farpoint-header .header-inner {
+#header .header-inner {
     height: 80px;
     padding-left: 20px;
     padding-right: 20px;
@@ -429,7 +429,7 @@ figure {
     border-radius: 7px;
 }
 
-#farpoint-header h1 {
+#header h1 {
     float: left;
     padding: 0;
     font-weight: 700;
@@ -437,31 +437,31 @@ figure {
     font-size: 30px;
 }
 
-#farpoint-header h1 a {
+#header h1 a {
     font-family: 'raleway';
     position: relative;
     color: #495b7b;
 }
 
-#farpoint-header h1 a>span {
+#header h1 a>span {
     color: rgb(211, 217, 229);
 }
 
-#farpoint-header h1 a:hover,
-#farpoint-header h1 a:active,
-#farpoint-header h1 a:focus {
+#header h1 a:hover,
+#header h1 a:active,
+#header h1 a:focus {
     text-decoration: none;
     outline: none;
 }
 
-#farpoint-header h1 a:hover,
-#farpoint-header h1 a:active,
-#farpoint-header h1 a:focus {
+#header h1 a:hover,
+#header h1 a:active,
+#header h1 a:focus {
     text-decoration: none;
     outline: none;
 }
 
-#farpoint-header h1 a:after {
+#header h1 a:after {
     position: absolute;
     bottom: 6px;
     right: -8px;
@@ -497,29 +497,29 @@ figure {
     padding-top: 9px;
 }
 
-#farpoint-header h1,
-#farpoint-header nav {
+#header h1,
+#header nav {
     margin: 38px 0 0 0;
 }
 
-#farpoint-header nav {
+#header nav {
     float: right;
     padding: 0;
 }
 
 @media screen and (max-width: 768px) {
-    #farpoint-header nav {
+    #header nav {
         display: none;
     }
 }
 
-#farpoint-header nav ul {
+#header nav ul {
     padding: 0;
     margin: 0 -0px 0 0;
     line-height: 0;
 }
 
-#farpoint-header nav ul li {
+#header nav ul li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -529,7 +529,7 @@ figure {
     *display: inline;
 }
 
-#farpoint-header nav ul li a {
+#header nav ul li a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
     padding: 10px;
@@ -539,14 +539,14 @@ figure {
     transition: 0.2s;
 }
 
-#farpoint-header nav ul li a i {
+#header nav ul li a i {
     line-height: 0;
     font-size: 20px;
     position: relative;
     top: 3px;
 }
 
-#farpoint-header nav ul li a:after {
+#header nav ul li a:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -567,12 +567,12 @@ figure {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#farpoint-header nav ul li a:hover {
+#header nav ul li a:hover {
     text-decoration: none;
     color: rgb(211, 217, 229);
 }
 
-#farpoint-header nav ul li a:hover:after {
+#header nav ul li a:hover:after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -581,17 +581,17 @@ figure {
     transform: scaleX(1);
 }
 
-#farpoint-header nav ul li a:active,
-#farpoint-header nav ul li a:focus {
+#header nav ul li a:active,
+#header nav ul li a:focus {
     outline: none;
     text-decoration: none;
 }
 
-#farpoint-header nav ul li.cta {
+#header nav ul li {
     margin-left: 20px;
 }
 
-#farpoint-header nav ul li.cta a {
+#header nav ul li a {
     padding-left: 16px !important;
     padding-right: 16px !important;
     padding-top: 7px !important;
@@ -604,21 +604,21 @@ figure {
     border-radius: 30px;
 }
 
-#farpoint-header nav ul li.cta a:hover {
+#header nav ul li a:hover {
     color: #fff;
     background: rgb(211, 217, 229);
 }
 
-#farpoint-header nav ul li.cta a:hover:after {
+#header nav ul li a:hover:after {
     display: none;
 }
 
-#farpoint-header nav ul li.active a {
+#header nav ul li.active a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
 
-#farpoint-header nav ul li.active a:after {
+#header nav ul li.active a:after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -714,27 +714,27 @@ figure {
     color: #d9534f;
 }
 
-#farpoint-services-section,
-#farpoint-work-section,
-#farpoint-testimony-section,
-#farpoint-blog-section {
+#services-section,
+#work-section,
+#testimony-section,
+#blog-section {
     padding: 7em 0;
 }
 
 @media screen and (max-width: 768px) {
-    #farpoint-services-section,
-    #farpoint-work-section,
-    #farpoint-testimony-section,
-    #farpoint-blog-section {
+    #services-section,
+    #work-section,
+    #testimony-section,
+    #blog-section {
         padding: 3em 0;
     }
 }
 
-#farpoint-services-section .services {
+#services-section .services {
     position: relative;
 }
 
-#farpoint-services-section .services i {
+#services-section .services i {
     position: absolute;
     top: 0;
     left: 0;
@@ -742,20 +742,20 @@ figure {
     color: rgb(211, 217, 229);
 }
 
-#farpoint-services-section .services .desc {
+#services-section .services .desc {
     padding-left: 70px;
 }
 
-#farpoint-services-section .services .desc h3 {
+#services-section .services .desc h3 {
     font-size: 20px;
     font-weight: 700;
 }
 
-.farpoint-services {
+.services {
     margin-top: 4em;
 }
 
-#farpoint-work-section .item-grid {
+#work-section .item-grid {
     width: 100%;
     float: left;
     position: relative;
@@ -770,7 +770,7 @@ figure {
     top: 2px;
 }
 
-#farpoint-work-section .item-grid .image {
+#work-section .item-grid .image {
     height: 300px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -778,21 +778,21 @@ figure {
     background-position: center center;
 }
 
-#farpoint-work-section .item-grid .v-align {
+#work-section .item-grid .v-align {
     padding: 30px;
 }
 
-#farpoint-work-section .item-grid .v-align h3 {
+#work-section .item-grid .v-align h3 {
     font-weight: 700;
     font-size: 20px;
 }
 
-#farpoint-work-section .item-grid .v-align h5 {
+#work-section .item-grid .v-align h5 {
     color: rgba(0, 0, 0, 0.3);
 }
 
-#farpoint-work-section .item-grid:hover,
-#farpoint-work-section .item-grid:focus {
+#work-section .item-grid:hover,
+#work-section .item-grid:focus {
     text-decoration: none;
     -webkit-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
     -moz-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
@@ -883,7 +883,7 @@ figure {
     border: 2px solid rgb(211, 217, 229);
 }
 
-#farpoint-blog-section .item-grid {
+#blog-section .item-grid {
     width: 100%;
     float: left;
     position: relative;
@@ -898,7 +898,7 @@ figure {
     top: 2px;
 }
 
-#farpoint-blog-section .item-grid iframe {
+#blog-section .item-grid iframe {
     width: 100%;
     float: left;
     position: relative;
@@ -913,26 +913,26 @@ figure {
     top: 2px;
 }
 
-#farpoint-blog-section .item-grid .v-align {
+#blog-section .item-grid .v-align {
     padding: 30px;
 }
 
-#farpoint-blog-section .item-grid .v-align h3 {
+#blog-section .item-grid .v-align h3 {
     padding-top: 20px;
     font-weight: 700;
     font-size: 20px;
 }
 
-#farpoint-blog-section .item-grid .v-align h5 {
+#blog-section .item-grid .v-align h5 {
     color: rgba(0, 0, 0, 0.3);
 }
 
-#farpoint-blog-section .item-grid .v-align p {
+#blog-section .item-grid .v-align p {
     color: gray;
 }
 
-#farpoint-blog-section .item-grid:hover,
-#farpoint-blog-section .item-grid:focus {
+#blog-section .item-grid:hover,
+#blog-section .item-grid:focus {
     text-decoration: none;
     -webkit-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
     -moz-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
@@ -965,11 +965,11 @@ figure {
     margin-bottom: 0;
 }
 
-.farpoint-heading {
+.heading {
     margin-bottom: 30px;
 }
 
-.farpoint-heading h2 {
+.heading h2 {
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -986,16 +986,16 @@ figure {
     color: #55acee;
 }
 
-.farpoint-about,
-.farpoint-team,
-.farpoint-contact {
+.about,
+.team,
+.contact {
     padding: 7em 0;
 }
 
 @media screen and (max-width: 768px) {
-    .farpoint-about,
-    .farpoint-team,
-    .farpoint-contact {
+    .about,
+    .team,
+    .contact {
         padding: 3em 0 10px 0;
     }
 }
@@ -1041,31 +1041,31 @@ figure {
     }
 }
 
-.farpoint-staff img {
+.staff img {
     margin-bottom: 1.5em;
 }
 
-.farpoint-staff h3 {
+.staff h3 {
     margin: 0 0 20px 0;
     font-weight: 700;
     font-size: 20px;
 }
 
-.farpoint-staff h4 {
+.staff h4 {
     margin: 0 0 20px 0;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.4);
 }
 
-.farpoint-staff .farpoint-social {
+.staff .social {
     text-align: center;
 }
 
-.farpoint-staff .farpoint-social a {
+.staff .social a {
     color: #000;
 }
 
-.farpoint-cta {
+{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1075,12 +1075,12 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-    .farpoint-cta {
+    {
         padding: 3em 0;
     }
 }
 
-.farpoint-cta .overlay {
+.overlay {
     background: rgba(0, 0, 0, 0.7);
     left: 0;
     right: 0;
@@ -1090,25 +1090,25 @@ figure {
     z-index: 1;
 }
 
-.farpoint-cta .container {
+.container {
     position: relative;
     z-index: 2;
 }
 
-.farpoint-cta p,
-.farpoint-cta h3 {
+p,
+h3 {
     color: #fff;
 }
 
-.farpoint-cta p:last-child {
+p:last-child {
     margin-bottom: 0;
 }
 
-.farpoint-cta .btn {
+.btn {
     color: #fff;
 }
 
-#farpoint-footer {
+#footer {
     padding: 7em 0;
     float: left;
     width: 100%;
@@ -1117,109 +1117,109 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-    #farpoint-footer {
+    #footer {
         padding: 3em 0;
     }
 }
 
-#farpoint-footer h2,
-#farpoint-footer h3,
-#farpoint-footer h4 {
+#footer h2,
+#footer h3,
+#footer h4 {
     color: #fff;
 }
 
-#farpoint-footer h3 {
+#footer h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: bold;
 }
 
-#farpoint-footer [class*="col"] {
+#footer [class*="col"] {
     padding-bottom: 30px;
 }
 
-#farpoint-footer .btn {
+#footer .btn {
     color: #fff;
 }
 
-#farpoint-footer .float {
+#footer .float {
     float: left;
     margin-right: 10%;
 }
 
-#farpoint-footer ul {
+#footer ul {
     padding: 0;
     margin: 0;
 }
 
-#farpoint-footer ul li {
+#footer ul li {
     padding: 0;
     margin: 0 0 10px 0;
     list-style: none;
 }
 
-#farpoint-footer ul li a {
+#footer ul li a {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none !important;
 }
 
-#farpoint-footer ul li a:hover {
+#footer ul li a:hover {
     color: #fff;
 }
 
-#farpoint-footer .farpoint-social li {
+#footer .social li {
     display: block !important;
 }
 
-.farpoint-copyright {
+.copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     clear: both;
     margin-top: 40px !important;
     padding: 40px 0 0 0;
 }
 
-.farpoint-copyright span {
+.copyright span {
     display: block;
 }
 
 @media screen and (max-width: 480px) {
-    .farpoint-copyright {
+    .copyright {
         text-align: left !important;
     }
-    .farpoint-copyright span {
+    .copyright span {
         display: inline;
     }
 }
 
-#farpoint-page {
+#page {
     position: relative;
     z-index: 2;
     background: #fff;
 }
 
-#farpoint-offcanvas,
+#offcanvas,
 .farpoint-nav-toggle,
-#farpoint-page {
+#page {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
 
-#farpoint-offcanvas,
+#offcanvas,
 .farpoint-nav-toggle,
-#farpoint-page {
+#page {
     position: relative;
 }
 
-#farpoint-page {
+#page {
     z-index: 2;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
 
-.offcanvas-visible #farpoint-page {
+.offcanvas-visible #page {
     -moz-transform: translateX(-275px);
     -webkit-transform: translateX(-275px);
     -ms-transform: translateX(-275px);
@@ -1227,7 +1227,7 @@ figure {
     transform: translateX(-275px);
 }
 
-#farpoint-offcanvas {
+#offcanvas {
     display: none;
     height: 100%;
     right: 0;
@@ -1241,45 +1241,45 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-    #farpoint-offcanvas {
+    #offcanvas {
         display: block;
     }
 }
 
-#farpoint-offcanvas ul {
+#offcanvas ul {
     padding: 0;
     margin: 0;
 }
 
-#farpoint-offcanvas ul li {
+#offcanvas ul li {
     padding: 0;
     margin: 0 0 10px 0;
     list-style: none;
     line-height: 28px;
 }
 
-#farpoint-offcanvas ul li a {
+#offcanvas ul li a {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none !important;
 }
 
-#farpoint-offcanvas ul li a:hover {
+#offcanvas ul li a:hover {
     color: rgb(211, 217, 229);
 }
 
-#farpoint-offcanvas ul li.active a {
+#offcanvas ul li.active a {
     color: rgb(211, 217, 229);
 }
 
-#farpoint-offcanvas ul li.cta {
+#offcanvas ul li {
     margin-left: 0;
     margin-top: 20px;
     display: block;
     float: left;
 }
 
-#farpoint-offcanvas ul li.cta a {
+#offcanvas ul li a {
     padding-left: 16px !important;
     padding-right: 16px !important;
     padding-top: 7px !important;
@@ -1291,12 +1291,12 @@ figure {
     border-radius: 30px;
 }
 
-#farpoint-offcanvas ul li.cta a:hover {
+#offcanvas ul li a:hover {
     background: #fff;
     text-decoration: none;
 }
 
-#farpoint-offcanvas ul li.cta a:hover:after {
+#offcanvas ul li a:hover:after {
     display: none;
 }
 
@@ -1516,7 +1516,7 @@ figure {
     color: #888f94;
 }
 
-.farpoint-light-grey-section {
+.light-grey-section {
     /*margin-top: 20px; */
     background: rgba(0, 0, 0, 0.03) !important;
 }
