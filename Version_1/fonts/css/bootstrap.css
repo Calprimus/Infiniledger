@@ -11,8 +11,6 @@
 
 html {
     font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -301,15 +299,11 @@ th {
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -376,8 +370,6 @@ img {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     display: inline-block;
     max-width: 100%;
