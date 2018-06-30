@@ -1,32 +1,49 @@
-.container>div {
+html,
+body {
+    background-color: #ffeead;
+    margin: 10px;
+    font-size: 20px;
+}
+
+p {
+    color: #96ceb4;
+    text-align: center;
+}
+
+.flexbox-header>div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+.flexbox-header {
+    background-color: #96ceb4;
     color: #ffeead;
 }
 
-html,
-body {
-    box-sizing: border-box;
-    background-color: #ffeead;
-    height: 100%;
-    padding: 10px;
-    margin: 0px;
-}
-
-.container>div:nth-child(1n) {
+.header {
     background-color: #96ceb4;
 }
 
-.container>div:nth-child(3n) {
-    background-color: #88d8b0;
+.header :nth-child(2) {
+    padding: 0 40px;
 }
 
-.container>div:nth-child(2n) {
+.menu {
     background-color: #ff6f69;
 }
 
-.container>div:nth-child(4n) {
+.content {
     background-color: #ffcc5c;
+}
+
+.footer {
+    background-color: #88d8b0;
+}
+
+.grid-page>div {
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
 }
