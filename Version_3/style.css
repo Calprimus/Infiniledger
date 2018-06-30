@@ -22,7 +22,8 @@ body {
     color: #444;
 }
 
-.navigation {
+
+/* .navigation {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
@@ -34,9 +35,14 @@ body {
     color: #444;
     border-bottom: 4px solid black;
     background: green;
-}
+} */
 
 .navigation {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
     grid-area: navigation;
 }
 
