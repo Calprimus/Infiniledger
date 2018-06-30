@@ -1,6 +1,7 @@
-.wrapper {
-    display: grid;
+.container {
     height: 100%;
+    display: grid;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "r m m m m m" "r m m m m m" "r m m m m m" "r m m m m m" "r m m m m m" "n s s s s s";
@@ -20,12 +21,61 @@
 
 .d {
     grid-area: s;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "e e e" "f f f" "g g g";
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
 }
 
 .box {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
+    border-color: #fff;
     padding: 20px;
     font-size: 150%;
 }
+
+
+/* html,
+body {
+    background-color: #ffeead;
+    margin: 10px;
+}
+
+.container>div:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.container>div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.container>div:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.container>div:nth-child(4n) {
+    background-color: #ffcc5c;
+} */
