@@ -15,21 +15,59 @@ body {
 .wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "navigation" "bigbanner" "services" "segments" "articles" "news" "company" "contact" "footer";
     background-color: #fff;
     color: #444;
 }
 
 .navigation {
     display: grid;
-    grid-template-columns: repeat(7 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1em;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "services" "segments" "articles" "news" "company" "contact";
     align-items: center;
     text-align: center;
     background-color: #fff;
     color: #444;
     border-bottom: 4px solid black;
     background: green;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.bigbanner {
+    grid-area: bigbanner;
+}
+
+.services {
+    grid-area: services;
+}
+
+.segments {
+    grid-area: segments;
+}
+
+.articles {
+    grid-area: articles;
+}
+
+.news {
+    grid-area: news;
+}
+
+.company {
+    grid-area: company
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.footer {
+    grid-area: footer;
 }
