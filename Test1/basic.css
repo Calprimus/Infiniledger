@@ -47,3 +47,22 @@ p {
     align-items: center;
     padding: 0px 20px;
 }
+
+.menu2 {
+    background-color: #495b7b;
+}
+
+.content2 {
+    background-color: #788cae;
+}
+
+.footer2 {
+    background-color: #b5c0d3;
+}
+
+.grid-page2>div {
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
