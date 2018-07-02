@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Regular.ttf');
 }
@@ -6,41 +6,57 @@
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway-Regular.ttf');
-}
+} */
 
-* {
-    box-sizing: border-box;
-}
 
-body {
+/* body {
     margin: 40px;
-}
+} */
 
 #services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    width: 90%;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100px 10px 100px;
+    grid-template-rows: auto 10px auto;
 }
 
-.strategy {
+#services>.a {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #495b7b;
+    color: rgb(240, 242, 246);
+    border-radius: 5px;
+}
+
+#services>.strategy {
     grid-column: 1/2;
     grid-row: 2/3;
+    background-color: #495b7b;
+    color: rgb(240, 242, 246);
+    border-radius: 5px;
 }
 
-.consultancy {
+#services>.consultancy {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #495b7b;
+    color: rgb(240, 242, 246);
+    border-radius: 5px;
 }
 
-.solutions {
-    grid-column: 3/-1;
+#services>.solutions {
+    grid-column: 3/4;
     grid-row: 2/3;
+    background-color: #495b7b;
+    color: rgb(240, 242, 246);
+    border-radius: 5px;
 }
 
-#segments {
+
+/* #segments {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
@@ -59,4 +75,4 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 20px;
-}
+} */
