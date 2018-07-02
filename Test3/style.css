@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+body {
+    margin: 40px;
+}
+
+.services {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.segments {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.articles {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.news {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
