@@ -8,32 +8,53 @@
     src: url('fonts/Raleway-Regular.ttf');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 40px;
 }
 
-.services {
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.strategy {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.consultancy {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.solutions {
+    grid-column: 3/-1;
+    grid-row: 2/3;
+}
+
+#segments {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
 }
 
-.segments {
+#articles {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
 }
 
-.articles {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.news {
+#news {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
