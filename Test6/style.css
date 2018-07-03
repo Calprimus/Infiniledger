@@ -30,7 +30,7 @@ nav div {
         display: grid;
         width: 100%;
         margin: 0 auto;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 200px 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
         grid-gap: 20px;
         align-items: center;
@@ -46,7 +46,8 @@ nav div {
 }
 
 .logo {
-    background-image: url("images/infiwhite.png");
+    background-image: url("images/InfiBd50.png");
+    padding-left: 20px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
