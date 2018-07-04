@@ -1,90 +1,79 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
 body {
     padding: 20px;
     background: #f5f7f8;
 }
 
 
-/* Header --- Nav Menu Bar */
+/* Header --- Nav Menu Bar with Flex */
 
-nav {
-    display: grid;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    align-items: center;
-    text-align: center;
-    background: #ffffff;
-    grid-template-areas: "logo" "one" "two" "three" "four"
-}
-
-nav div {
-    color: #111111;
-    font-size: 16px;
-    padding: 10px;
-}
-
-@media screen and (min-width: 800px) {
-    nav {
-        display: grid;
-        width: 100%;
-        margin: 0 auto;
-        grid-template-columns: 200px 1fr 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        grid-gap: 20px;
-        align-items: center;
-        text-align: center;
-        background: #ffffff;
-        grid-template-areas: "logo one two three four"
-    }
-    nav div {
-        color: #111111;
-        font-size: 20px;
-        padding: 20px;
-    }
+.header-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 2.3em 0;
 }
 
 .logo {
-    background-image: url("images/InfiBd50.png");
-    padding-left: 20px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 10vh;
-    grid-area: logo;
+    margin-left: 3%;
 }
 
-.one {
-    grid-area: one;
+.logo img {
+    display: block;
 }
 
-.two {
-    grid-area: two;
+.logo p {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    margin-top: 0.5em;
 }
 
-.three {
-    grid-area: three;
+nav {
+    margin: 1.5em 0 0 5%;
 }
 
-.four {
-    grid-area: four;
+header ul li {
+    display: inline-block;
+    padding: 0 1.4em 0 0;
+    font-size: 0.9em;
 }
 
-.navLinks {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
+header ul li a {
     text-decoration: none;
-    color: black;
+    color: #7D7C7D;
 }
 
-.navLinks:hover {
-    background-color: #495b7b;
-    color: white;
+li a.active {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
 }
 
-#twist {
-    color: blue;
+li a:hover {
+    color: #B6B6B6;
+}
+
+@media screen and (min-width: 600px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-left: 2.3em;
+    }
+    nav {
+        align-self: center;
+        margin: 0 0.8em 0 0;
+    }
 }
 
 
