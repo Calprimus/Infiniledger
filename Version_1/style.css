@@ -907,21 +907,6 @@ figure {
     color: #000;
 }
 
-{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 7em 0;
-    position: relative;
-}
-
-@media screen and (max-width: 768px) {
-    {
-        padding: 3em 0;
-    }
-}
-
 .overlay {
     background: rgba(0, 0, 0, 0.7);
     left: 0;
