@@ -72,6 +72,23 @@ li a:hover {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .logo {
+        margin-left: 3%;
+    }
+    .logo img {
+        display: block;
+    }
+    .logo p {
+        font-size: 14px;
+        font-family: 'Montserrat';
+        margin-top: 0.5em;
+    }
+    nav {
+        display: none;
+    }
+}
+
 
 /* Grid 1 Format */
 
