@@ -31,12 +31,6 @@ body {
     display: block;
 }
 
-.logo p {
-    font-size: 14px;
-    font-family: 'Montserrat';
-    margin-top: 0.5em;
-}
-
 nav {
     margin: 1.5em 0 0 5%;
 }
@@ -64,7 +58,7 @@ li a:hover {
         justify-content: space-between;
     }
     .logo {
-        margin-left: 2.3em;
+        margin-left: 2em;
     }
     nav {
         align-self: center;
@@ -78,11 +72,6 @@ li a:hover {
     }
     .logo img {
         display: block;
-    }
-    .logo p {
-        font-size: 14px;
-        font-family: 'Montserrat';
-        margin-top: 0.5em;
     }
     nav {
         display: none;
@@ -128,10 +117,11 @@ li a:hover {
 .item-1 {
     background: #b03532;
     grid-area: header;
+    transition: 0.5s;
 }
 
 .item-1:hover {
-    box-shadow: 10px 10px 14px 0px rgba(181, 192, 211, 1);
+    box-shadow: 5px 5px 8px 0px rgb(79, 83, 90);
 }
 
 .item-2 {
@@ -173,8 +163,16 @@ li a:hover {
 }
 
 .item-3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 5px;
+    /* 5px rounded corners */
     background: #30997a;
     grid-area: sidebar;
+}
+
+.item-3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
 }
 
 .item-4 {
