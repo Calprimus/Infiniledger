@@ -9,11 +9,14 @@
 }
 
 body {
-    margin: 40px;
+    padding: 20px;
+    background: #f5f7f8;
 }
 
 .wrapper {
     display: grid;
+    width: 100%;
+    margin: 0 auto;
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
@@ -22,12 +25,11 @@ body {
     color: #444;
 }
 
-
-/* .navigation {
+.navigation {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
     grid-template-areas: "services" "segments" "articles" "news" "company" "contact";
     align-items: center;
     text-align: center;
@@ -35,7 +37,7 @@ body {
     color: #444;
     border-bottom: 4px solid black;
     background: green;
-} */
+}
 
 .navigation {
     background-color: #444;

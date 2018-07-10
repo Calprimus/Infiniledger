@@ -85,9 +85,9 @@ li a:hover {
     display: grid;
     width: 100%;
     margin: 0 auto;
+    grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80px auto auto 80px;
-    grid-gap: 10px;
     grid-template-areas: "header" "main" "sidebar" "footer";
 }
 
