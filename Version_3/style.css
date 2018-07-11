@@ -11,6 +11,7 @@
 body {
     padding: 20px;
     background: #f5f7f8;
+    font-family: 'Raleway';
 }
 
 .wrapper {
@@ -97,17 +98,164 @@ li a:hover {
     grid-area: bigbanner;
 }
 
+
+/* Grid Services >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .services {
     grid-area: services;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title" "strategy   consultancy   solutions" "strategy   consultancy   solutions" "strategy   consultancy   solutions";
 }
+
+.services .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.services div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.title {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+}
+
+.strategy {
+    background: #da6f2b;
+    grid-area: strategy;
+}
+
+.consultancy {
+    background: #3d8bb1;
+    grid-area: consultancy;
+}
+
+.solutions {
+    background: #e03f3f;
+    grid-area: solutions;
+}
+
+
+/* Grid Services Ends*/
+
+
+/* Grid Segments >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .segments {
     grid-area: segments;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
 }
+
+.segments div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.s1 {
+    background: #cdcdd2;
+    grid-area: s1;
+}
+
+.s2 {
+    background: #acabb4;
+    grid-area: s2;
+}
+
+.s3 {
+    background: #595769;
+    grid-area: s3;
+}
+
+.s4 {
+    background: #434153;
+    grid-area: s4;
+}
+
+.s5 {
+    background: #2f2e3a;
+    grid-area: s5;
+}
+
+.s6 {
+    background: #141919;
+    grid-area: s6;
+}
+
+
+/* Grid Segments Ends*/
+
+
+/* Grid Articles >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .articles {
     grid-area: articles;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
 }
+
+.articles div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.a1 {
+    background: #cdcdd2;
+    grid-area: a1;
+}
+
+.a2 {
+    background: #acabb4;
+    grid-area: a2;
+}
+
+.a3 {
+    background: #595769;
+    grid-area: a3;
+}
+
+.a4 {
+    background: #434153;
+    grid-area: a4;
+}
+
+.a5 {
+    background: #2f2e3a;
+    grid-area: a5;
+}
+
+.a6 {
+    background: #141919;
+    grid-area: a6;
+}
+
+
+/* Grid Articles Ends*/
 
 .news {
     grid-area: news;
