@@ -123,6 +123,9 @@ li a:hover {
     color: white;
     font-size: 20px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
@@ -164,10 +167,19 @@ li a:hover {
     grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
 }
 
+.segments .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
 .segments div {
     color: white;
     font-size: 20px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .s1 {
@@ -215,60 +227,247 @@ li a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
-    grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
+    grid-template-areas: "title title title""a1 a2 a3" "a4 a5 a6";
+}
+
+.articles .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
 }
 
 .articles div {
     color: white;
     font-size: 20px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .a1 {
-    background: #cdcdd2;
+    background: #c2d1f0;
     grid-area: a1;
 }
 
 .a2 {
-    background: #acabb4;
+    background: #99b3e6;
     grid-area: a2;
 }
 
 .a3 {
-    background: #595769;
+    background: #7094db;
     grid-area: a3;
 }
 
 .a4 {
-    background: #434153;
+    background: #4775d1;
     grid-area: a4;
 }
 
 .a5 {
-    background: #2f2e3a;
+    background: #2e5cb8;
     grid-area: a5;
 }
 
 .a6 {
-    background: #141919;
+    background: #24478f;
     grid-area: a6;
 }
 
 
 /* Grid Articles Ends*/
 
+
+/* Grid News >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 .news {
     grid-area: news;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""n1 n2 n3" "n4 n5 n6";
 }
 
-.company {
-    grid-area: company
+.news .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
 }
+
+.news div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.n1 {
+    background: #c2d1f0;
+    grid-area: n1;
+}
+
+.n2 {
+    background: #99b3e6;
+    grid-area: n2;
+}
+
+.n3 {
+    background: #7094db;
+    grid-area: n3;
+}
+
+.n4 {
+    background: #4775d1;
+    grid-area: n4;
+}
+
+.n5 {
+    background: #2e5cb8;
+    grid-area: n5;
+}
+
+.n6 {
+    background: #24478f;
+    grid-area: n6;
+}
+
+
+/* Grid News Ends*/
+
+
+/* Grid Company >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.company {
+    grid-area: company;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""c1 c2 c3";
+}
+
+.company .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.company div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 {
+    background: #c2d1f0;
+    grid-area: c1;
+}
+
+.c2 {
+    background: #99b3e6;
+    grid-area: c2;
+}
+
+.c3 {
+    background: #7094db;
+    grid-area: c3;
+}
+
+
+/* Grid Company Ends*/
+
+
+/* Grid Contact >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .contact {
     grid-area: contact;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""cont cont cont";
 }
+
+.contact .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.contact div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.cont {
+    background: #c2d1f0;
+    grid-area: cont;
+}
+
+
+/* Grid Company Ends*/
+
+
+/* Grid Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .footer {
     grid-area: footer;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "title title title""f1 f2 f3";
 }
+
+.footer .title {
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.footer div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f1 {
+    background: #c2d1f0;
+    grid-area: f1;
+}
+
+.f2 {
+    background: #99b3e6;
+    grid-area: f2;
+}
+
+.f3 {
+    background: #7094db;
+    grid-area: f3;
+}
+
+
+/* Grid Footer Ends*/
