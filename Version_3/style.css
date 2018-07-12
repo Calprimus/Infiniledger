@@ -27,6 +27,43 @@ body {
 }
 
 
+/* Style the video: 100% width and height to cover the entire window */
+
+.bigbanner {
+    grid-area: bigbanner;
+    display: grid;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas: "myVideo";
+}
+
+video {
+    /* position: fixed; */
+    right: 0;
+    bottom: 0;
+    /* min-width: 100%;
+    min-height: 100%; */
+    grid-area: myVideo;
+}
+
+
+/* Add some content at the bottom of the video/page */
+
+
+/* .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+} */
+
+
 /* Navigation Start */
 
 .navigation {
@@ -93,10 +130,6 @@ li a:hover {
 
 
 /* Navigation Ends */
-
-.bigbanner {
-    grid-area: bigbanner;
-}
 
 
 /* Grid Services >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -422,7 +455,7 @@ li a:hover {
 }
 
 
-/* Grid Company Ends*/
+/* Grid Contact Ends*/
 
 
 /* Grid Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
