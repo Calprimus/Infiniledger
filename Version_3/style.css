@@ -1,510 +1,456 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Regular.ttf');
-}
-
-body {
-    padding: 20px;
-    background: #f5f7f8;
-    font-family: 'Raleway';
-}
-
-.wrapper {
-    display: grid;
-    width: 100%;
-    margin: 0 auto;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "navigation" "bigbanner" "services" "segments" "articles" "news" "company" "contact" "footer";
-    background-color: #fff;
-    color: #444;
-}
-
-
-/* Style the video: 100% width and height to cover the entire window */
-
-
-/* .bigbanner {
-    grid-area: bigbanner;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "myVideo myVideo myVideo";
-}
-
-#myVideo {
-    grid-area: myVideo;
-} */
-
-.bigbanner {
-    grid-area: bigbanner;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-
-.bigbanner video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Navigation Start */
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 2.3em 0;
-}
-
-.logo {
-    margin-left: 3%;
-}
-
-.logo img {
-    display: block;
-}
-
-nav {
-    margin: 1.5em 0 0 5%;
-}
-
-header ul li {
-    display: inline-block;
-    padding: 0 1.4em 0 0;
-    font-size: 1.2em;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #7D7C7D;
-}
-
-li a:hover {
-    color: #000000;
-    border-bottom: 2px solid #000000;
-    font-weight: 300;
-}
-
-@media screen and (min-width: 600px) {
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('fonts/Montserrat-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Raleway';
+        src: url('fonts/Raleway-Regular.ttf');
+    }
+    
+    body {
+        padding: 20px;
+        background: #f5f7f8;
+        font-family: 'Raleway';
+    }
+    
+    .wrapper {
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "navigation" "bigbanner" "services" "segments" "articles" "news" "company" "contact" "footer";
+        background-color: #fff;
+        color: #444;
+    }
+    /* Style the video: 100% width and height to cover the entire window */
+    
+    .bigbanner {
+        grid-area: bigbanner;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "myVideo" "myVideo";
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        grid-area: myVideo;
+    }
+    /* Navigation Start */
+    
     .navigation {
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 2.3em 0;
     }
-    .logo {
-        margin-left: 2em;
-    }
-    nav {
-        align-self: center;
-        margin: 0 0.8em 0 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
+    
     .logo {
         margin-left: 3%;
     }
+    
     .logo img {
         display: block;
     }
+    
     nav {
-        display: none;
+        margin: 1.5em 0 0 5%;
     }
-}
-
-
-/* Navigation Ends */
-
-
-/* Grid Services >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.services {
-    grid-area: services;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title" "strategy   consultancy   solutions" "strategy   consultancy   solutions" "strategy   consultancy   solutions";
-}
-
-.services .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.services div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title {
-    grid-area: title;
-    align-self: center;
-    justify-self: center;
-}
-
-.strategy {
-    background: #da6f2b;
-    grid-area: strategy;
-}
-
-.consultancy {
-    background: #3d8bb1;
-    grid-area: consultancy;
-}
-
-.solutions {
-    background: #e03f3f;
-    grid-area: solutions;
-}
-
-
-/* Grid Services Ends*/
-
-
-/* Grid Segments >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.segments {
-    grid-area: segments;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
-}
-
-.segments .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.segments div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.s1 {
-    background: #cdcdd2;
-    grid-area: s1;
-}
-
-.s2 {
-    background: #acabb4;
-    grid-area: s2;
-}
-
-.s3 {
-    background: #595769;
-    grid-area: s3;
-}
-
-.s4 {
-    background: #434153;
-    grid-area: s4;
-}
-
-.s5 {
-    background: #2f2e3a;
-    grid-area: s5;
-}
-
-.s6 {
-    background: #141919;
-    grid-area: s6;
-}
-
-
-/* Grid Segments Ends*/
-
-
-/* Grid Articles >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.articles {
-    grid-area: articles;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""a1 a2 a3" "a4 a5 a6";
-}
-
-.articles .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.articles div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.a1 {
-    background: #c2d1f0;
-    grid-area: a1;
-}
-
-.a2 {
-    background: #99b3e6;
-    grid-area: a2;
-}
-
-.a3 {
-    background: #7094db;
-    grid-area: a3;
-}
-
-.a4 {
-    background: #4775d1;
-    grid-area: a4;
-}
-
-.a5 {
-    background: #2e5cb8;
-    grid-area: a5;
-}
-
-.a6 {
-    background: #24478f;
-    grid-area: a6;
-}
-
-
-/* Grid Articles Ends*/
-
-
-/* Grid News >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.news {
-    grid-area: news;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""n1 n2 n3" "n4 n5 n6";
-}
-
-.news .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.news div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.n1 {
-    background: #c2d1f0;
-    grid-area: n1;
-}
-
-.n2 {
-    background: #99b3e6;
-    grid-area: n2;
-}
-
-.n3 {
-    background: #7094db;
-    grid-area: n3;
-}
-
-.n4 {
-    background: #4775d1;
-    grid-area: n4;
-}
-
-.n5 {
-    background: #2e5cb8;
-    grid-area: n5;
-}
-
-.n6 {
-    background: #24478f;
-    grid-area: n6;
-}
-
-
-/* Grid News Ends*/
-
-
-/* Grid Company >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.company {
-    grid-area: company;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""c1 c2 c3";
-}
-
-.company .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.company div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.c1 {
-    background: #c2d1f0;
-    grid-area: c1;
-}
-
-.c2 {
-    background: #99b3e6;
-    grid-area: c2;
-}
-
-.c3 {
-    background: #7094db;
-    grid-area: c3;
-}
-
-
-/* Grid Company Ends*/
-
-
-/* Grid Contact >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.contact {
-    grid-area: contact;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""cont cont cont";
-}
-
-.contact .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.contact div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-}
-
-.cont {
-    background: #c2d1f0;
-    grid-area: cont;
-}
-
-
-/* Grid Contact Ends*/
-
-
-/* Grid Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.footer {
-    grid-area: footer;
-    display: grid;
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    grid-template-areas: "title title title""f1 f2 f3";
-}
-
-.footer .title {
-    color: black;
-    font-size: 24px;
-    padding: 20px;
-}
-
-.footer div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.f1 {
-    background: #c2d1f0;
-    grid-area: f1;
-}
-
-.f2 {
-    background: #99b3e6;
-    grid-area: f2;
-}
-
-.f3 {
-    background: #7094db;
-    grid-area: f3;
-}
-
-
-/* Grid Footer Ends*/
+    
+    header ul li {
+        display: inline-block;
+        padding: 0 1.4em 0 0;
+        font-size: 1.2em;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        color: #7D7C7D;
+    }
+    
+    li a:hover {
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        font-weight: 300;
+    }
+    
+    @media screen and (min-width: 600px) {
+        .navigation {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .logo {
+            margin-left: 2em;
+        }
+        nav {
+            align-self: center;
+            margin: 0 0.8em 0 0;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .logo {
+            margin-left: 3%;
+        }
+        .logo img {
+            display: block;
+        }
+        nav {
+            display: none;
+        }
+    }
+    /* Navigation Ends */
+    /* Grid Services >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .services {
+        grid-area: services;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title" "strategy   consultancy   solutions" "strategy   consultancy   solutions" "strategy   consultancy   solutions";
+    }
+    
+    .services .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .services div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .title {
+        grid-area: title;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .strategy {
+        background: #da6f2b;
+        grid-area: strategy;
+    }
+    
+    .consultancy {
+        background: #3d8bb1;
+        grid-area: consultancy;
+    }
+    
+    .solutions {
+        background: #e03f3f;
+        grid-area: solutions;
+    }
+    /* Grid Services Ends*/
+    /* Grid Segments >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .segments {
+        grid-area: segments;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""s1 s2 s3" "s4 s5 s6";
+    }
+    
+    .segments .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .segments div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .s1 {
+        background: #cdcdd2;
+        grid-area: s1;
+    }
+    
+    .s2 {
+        background: #acabb4;
+        grid-area: s2;
+    }
+    
+    .s3 {
+        background: #595769;
+        grid-area: s3;
+    }
+    
+    .s4 {
+        background: #434153;
+        grid-area: s4;
+    }
+    
+    .s5 {
+        background: #2f2e3a;
+        grid-area: s5;
+    }
+    
+    .s6 {
+        background: #141919;
+        grid-area: s6;
+    }
+    /* Grid Segments Ends*/
+    /* Grid Articles >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .articles {
+        grid-area: articles;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""a1 a2 a3" "a4 a5 a6";
+    }
+    
+    .articles .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .articles div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .a1 {
+        background: #c2d1f0;
+        grid-area: a1;
+    }
+    
+    .a2 {
+        background: #99b3e6;
+        grid-area: a2;
+    }
+    
+    .a3 {
+        background: #7094db;
+        grid-area: a3;
+    }
+    
+    .a4 {
+        background: #4775d1;
+        grid-area: a4;
+    }
+    
+    .a5 {
+        background: #2e5cb8;
+        grid-area: a5;
+    }
+    
+    .a6 {
+        background: #24478f;
+        grid-area: a6;
+    }
+    /* Grid Articles Ends*/
+    /* Grid News >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .news {
+        grid-area: news;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""n1 n2 n3" "n4 n5 n6";
+    }
+    
+    .news .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .news div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .n1 {
+        background: #c2d1f0;
+        grid-area: n1;
+    }
+    
+    .n2 {
+        background: #99b3e6;
+        grid-area: n2;
+    }
+    
+    .n3 {
+        background: #7094db;
+        grid-area: n3;
+    }
+    
+    .n4 {
+        background: #4775d1;
+        grid-area: n4;
+    }
+    
+    .n5 {
+        background: #2e5cb8;
+        grid-area: n5;
+    }
+    
+    .n6 {
+        background: #24478f;
+        grid-area: n6;
+    }
+    /* Grid News Ends*/
+    /* Grid Company >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .company {
+        grid-area: company;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""c1 c2 c3";
+    }
+    
+    .company .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .company div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .c1 {
+        background: #c2d1f0;
+        grid-area: c1;
+    }
+    
+    .c2 {
+        background: #99b3e6;
+        grid-area: c2;
+    }
+    
+    .c3 {
+        background: #7094db;
+        grid-area: c3;
+    }
+    /* Grid Company Ends*/
+    /* Grid Contact >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .contact {
+        grid-area: contact;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""cont cont cont";
+    }
+    
+    .contact .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .contact div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .cont {
+        background: #c2d1f0;
+        grid-area: cont;
+    }
+    /* Grid Contact Ends*/
+    /* Grid Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .footer {
+        grid-area: footer;
+        display: grid;
+        padding-top: 20px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: "title title title""f1 f2 f3";
+    }
+    
+    .footer .title {
+        color: black;
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .footer div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .f1 {
+        background: #c2d1f0;
+        grid-area: f1;
+    }
+    
+    .f2 {
+        background: #99b3e6;
+        grid-area: f2;
+    }
+    
+    .f3 {
+        background: #7094db;
+        grid-area: f3;
+    }
+    /* Grid Footer Ends*/
