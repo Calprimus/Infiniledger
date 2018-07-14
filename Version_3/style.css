@@ -25,7 +25,7 @@
         background-color: #fff;
         color: #444;
     }
-    /* Style the video: 100% width and height to cover the entire window */
+    /* Video or Big Picture Section Starts */
     
     .bigbanner {
         grid-area: bigbanner;
@@ -33,17 +33,44 @@
         padding-top: 20px;
         width: 100%;
         margin: 0 auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "myVideo" "myVideo";
+        grid-gap: 20px;
+        grid-template-areas: "v1 v2 v3" "v1 v2 v3" "v1 v2 v3";
     }
     
-    video {
+    .video div {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .v1 {
+        background: #2f2fcc;
+        grid-area: v1;
+    }
+    
+    .v2 {
+        background: #0808ca;
+        grid-area: v2;
+    }
+    
+    .v3 {
+        background: #080825;
+        grid-area: v3;
+    }
+    /* #myVideo {
+        grid-area: myVideo;
         padding: 20px;
         width: 100%;
         height: auto;
-        grid-area: myVideo;
-    }
+        align-items: center;
+        justify-content: center;
+    } */
+    /* Video or Big Picture Section Ends */
     /* Navigation Start */
     
     .navigation {
