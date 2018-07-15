@@ -33,10 +33,10 @@
         padding-top: 20px;
         width: 100%;
         margin: 0 auto;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 80% 1fr;
         grid-template-rows: auto;
         grid-gap: 20px;
-        grid-template-areas: "v1";
+        grid-template-areas: ". v1 .";
     }
     
     .bigbanner div {
