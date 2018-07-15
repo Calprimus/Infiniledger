@@ -36,16 +36,21 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-gap: 20px;
-        grid-template-areas: "v1 v2 v3" "v1 v2 v3" "v1 v2 v3";
+        grid-template-areas: "v1";
     }
     
-    .video div {
+    .bigbanner div {
         color: white;
         font-size: 20px;
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    
+    .bigbanner div video {
+        width: 100%;
+        height: auto;
     }
     
     .v1 {
