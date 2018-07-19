@@ -194,7 +194,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px;
-    grid-template-areas: "title title title" "strategy   consultancy   solutions" "strategy   consultancy   solutions" "strategy   consultancy   solutions";
+    grid-template-areas: "title title title" "strategy   consultancy   solutions" "img1 img2 img3";
 }
 
 .services .title {
@@ -204,6 +204,15 @@ body {
 }
 
 .services div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services div img {
     color: white;
     font-size: 20px;
     padding: 20px;
@@ -231,6 +240,21 @@ body {
 .solutions {
     background: #e03f3f;
     grid-area: solutions;
+}
+
+.img1 {
+    background: #e03f3f;
+    grid-area: img1;
+}
+
+.img2 {
+    background: #e03f3f;
+    grid-area: img2;
+}
+
+.img3 {
+    background: #e03f3f;
+    grid-area: img3;
 }
 
 
