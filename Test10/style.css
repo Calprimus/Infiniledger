@@ -22,6 +22,9 @@ body {
     margin: auto;
 }
 
+
+/* this is the important part to center content in a an element on a Grid */
+
 .cont {
     display: flex;
     align-items: center;
