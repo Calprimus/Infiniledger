@@ -8,20 +8,30 @@
     src: url('fonts/Raleway-Regular.ttf');
 }
 
-* {
-    box-sizing: border-box;
+body {
+    color: #fff;
+    font-family: 'Raleway';
+    text-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 100px;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-gap: 20px;
+    margin: 0 auto;
 }
 
 .grid div {
     border: 1px solid rgb(0, 95, 107);
     border-radius: 3px;
     background-color: rgba(0, 95, 107, 0.8);
-    padding: 0.2em;
+    color: #fff;
+    font-size: 2em;
+    padding: 30px;
+}
+
+.grid div:nth-child(even) {
+    background: #777;
+    padding: 30px;
 }
