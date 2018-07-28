@@ -20,7 +20,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 20px;
     margin: 0 auto;
-    grid-template-areas: "one . . . . two three four five six" ". . . . . . . . . ." "one one . . two two . . three three" "one one . . two two . . three three" ". . . . . . . . . ." " four four . . five five . .  six six" " four four . . five five . .  six six" ". . . . . . . . . ." "seven seven . . eigth eigth . . nine nine" "seven seven . . eigth eigth . . nine nine" ". . . . . . . . . ." "one one one one one one one one one one" "one one one one one one one one one one"
+    grid-template-areas: "one . . . . two three four five six" ". . . . . . . . . ." "one one . . two two . . three three" "one one . . two two . . three three" ". . . . . . . . . ." " four four . . five five . .  six six" " four four . . five five . .  six six" ". . . . . . . . . ." "seven seven . . eigth eigth . . nine nine" "seven seven . . eigth eigth . . nine nine" ". . . . . . . . . ." "one one one one one one one one one one" "one one one one one one one one one one";
 }
 
 
