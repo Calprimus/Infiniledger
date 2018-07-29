@@ -9,30 +9,32 @@
 }
 
 body {
-    color: #fff;
+    color: rgb(8, 0, 0);
     font-family: 'Raleway';
     text-align: center;
 }
 
-.grid {
+.content {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 20px;
     margin: 0 auto;
-    grid-template-areas: "one . . . . two three four five six" ". . . . . . . . . ." "one one . . two two . . three three" "one one . . two two . . three three" ". . . . . . . . . ." " four four . . five five . .  six six" " four four . . five five . .  six six" ". . . . . . . . . ." "seven seven . . eigth eigth . . nine nine" "seven seven . . eigth eigth . . nine nine" ". . . . . . . . . ." "one one one one one one one one one one" "one one one one one one one one one one";
+    grid-template-areas: "one . . ." ". . . ." "one one . . " "one one . . " ". . . . " " four four . . " " four four . . " ". . . ." "seven seven . ." "seven seven . ." ". . . . " "one one one one" "one one one one";
 }
 
 
 /* this is the important part to center content in a an element on a Grid */
 
-.cont {
+
+/* .cont {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.grid div {
+
+/* .grid div {
     display: grid;
     border: 1px solid rgb(0, 95, 107);
     border-radius: 3px;
@@ -40,12 +42,13 @@ body {
     color: #fff;
     font-size: 2em;
     padding: 30px;
-}
+} */
 
-.grid div:nth-child(even) {
+
+/* .grid div:nth-child(even) {
     background: #777;
     padding: 30px;
-}
+} */
 
 
 /* start defining blocks */
