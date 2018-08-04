@@ -99,6 +99,19 @@ body {
 
 .nine {
     grid-column: span 6;
-    grid-row: 6/10;
+    grid-row: 6/7;
     /* grid-area: nine; */
+}
+
+
+/* .ten {
+    grid-column: span 6;
+    grid-row: 7/10;
+} */
+
+img {
+    grid-column: span 6;
+    grid-row: 7/10;
+    width: 100%;
+    height: auto;
 }
