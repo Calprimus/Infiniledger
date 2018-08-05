@@ -17,7 +17,7 @@ body {
 .content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    /* grid-template-rows: minmax(150px, 1fr); */
     grid-gap: 10px;
     margin: 0 auto;
     /* grid-template-areas: "three three three" "seven seven seven" "six six six" "one one one " "two two two " "two two two " "five five five " "five five five" "eigth eigth eigth" "nine nine nine" "four four four"; */
@@ -42,12 +42,12 @@ body {
     background-color: rgba(0, 95, 107, 0.8);
     color: #fff;
     font-size: 2em;
-    padding: 30px;
+    padding: 10px;
 }
 
 .content div:nth-child(even) {
     background: #777;
-    padding: 30px;
+    padding: 10px;
 }
 
 
@@ -56,6 +56,14 @@ body {
 .one {
     grid-column: 1 / span 1;
     /* grid-area: one; */
+}
+
+.one img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .two {
@@ -106,6 +114,15 @@ body {
 .ten {
     grid-column: span 6;
     grid-row: 7/10;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
 }
 
 
