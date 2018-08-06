@@ -112,7 +112,7 @@ body {
 }
 
 .ten {
-    grid-column: span 6;
+    grid-column: span 1;
     grid-row: 7/10;
 }
 
