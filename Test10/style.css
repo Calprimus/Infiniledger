@@ -106,13 +106,14 @@ body {
 }
 
 .nine {
-    grid-column: span 6;
+    grid-column: 1/ span 1;
     grid-row: 6/7;
     /* grid-area: nine; */
 }
 
 .ten {
-    grid-column: span 1;
+    display: grid;
+    grid-column: 2/span 1;
     grid-row: 7/10;
 }
 
@@ -120,7 +121,6 @@ img {
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-bottom: 20px;
     background-size: cover;
     background-position: center center;
 }
