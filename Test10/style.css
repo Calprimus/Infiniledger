@@ -17,10 +17,8 @@ body {
 .content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: minmax(150px, 1fr); */
     grid-gap: 10px;
     margin: 0 auto;
-    /* grid-template-areas: "three three three" "seven seven seven" "six six six" "one one one " "two two two " "two two two " "five five five " "five five five" "eigth eigth eigth" "nine nine nine" "four four four"; */
 }
 
 
@@ -48,6 +46,15 @@ body {
 .content div:nth-child(even) {
     background: #777;
     padding: 10px;
+}
+
+.one {
+    background: #b03532;
+    transition: 0.5s;
+}
+
+.one:hover {
+    box-shadow: 5px 5px 8px 0px rgb(79, 83, 90);
 }
 
 
@@ -83,38 +90,34 @@ body {
 
 .five {
     grid-column: 1/ span 2;
-    grid-row: 2/4;
-    /* grid-area: five; */
 }
 
 .six {
     grid-column: 3/span 2;
-    grid-row: 2/4;
-    /* grid-area: six; */
 }
 
 .seven {
     grid-column: 5/span 2;
-    grid-row: 2/4;
-    /* grid-area: seven; */
 }
 
 .eigth {
-    grid-column: span 6;
-    grid-row: 4/6;
+    grid-column: 2/span 4;
     /* grid-area: eigth; */
 }
 
 .nine {
-    grid-column: 1/ span 1;
-    grid-row: 6/7;
+    grid-column: 1/ span 2;
     /* grid-area: nine; */
 }
 
 .ten {
     display: grid;
-    grid-column: 2/span 1;
-    grid-row: 7/10;
+    grid-column: 3/span 2;
+}
+
+.eleven {
+    display: grid;
+    grid-column: 5/span 2;
 }
 
 img {
