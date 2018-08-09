@@ -35,25 +35,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hov2:nth-child(even) {
+    background: #777;
+    padding: 10px;
+}
+
+.hov1 {
+    color: #7D7C7D;
+    font-size: 1vw;
+}
+
+.hov1:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+}
+
+.hov2 {
     border: 1px solid rgb(0, 95, 107);
     border-radius: 3px;
     background-color: rgba(0, 95, 107, 0.8);
     color: #fff;
     font-size: 2em;
     padding: 10px;
-}
-
-.content div:nth-child(even) {
-    background: #777;
-    padding: 10px;
-}
-
-.one {
-    background: #b03532;
     transition: 0.5s;
 }
 
-.one:hover {
+.hov2:hover {
     box-shadow: 5px 5px 8px 0px rgb(79, 83, 90);
 }
 
