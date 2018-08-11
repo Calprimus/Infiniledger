@@ -98,14 +98,6 @@ body {
     /* grid-area: four; */
 }
 
-.five {
-    grid-column: 1/ span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-}
-
 .item-1 {
     /* background: #ffffff; */
     grid-column: 1/ span 2;
@@ -117,12 +109,28 @@ body {
     font-size: 1.2vw;
 }
 
+.five {
+    grid-column: 1/ span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
 .six {
     grid-column: 3/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
 }
 
 .seven {
     grid-column: 5/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
 }
 
 .eigth {
