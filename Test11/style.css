@@ -1,0 +1,184 @@
+/* this is the important part to center content in a an element on a Grid */
+
+
+/* .cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+body {
+    color: rgb(8, 0, 0);
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    margin: 10px 20px;
+}
+
+.content div .hov2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hov2:nth-child(even) {
+    background: #777;
+    padding: 5px;
+}
+
+.hov1 {
+    color: #7D7C7D;
+    font-size: 1vw;
+}
+
+.hov1:hover {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    font-weight: 300;
+}
+
+.hov2 {
+    border: 1px solid rgb(0, 95, 107);
+    border-radius: 3px;
+    background-color: rgba(0, 95, 107, 0.8);
+    color: #fff;
+    font-size: 2em;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.hov2:hover {
+    box-shadow: 5px 5px 8px 0px rgb(79, 83, 90);
+}
+
+
+/* start nav bar */
+
+.one {
+    grid-column: 1 / span 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.one img {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.services {
+    grid-column: 7/ span 1;
+}
+
+.segments {
+    grid-column: 8/ span 1;
+}
+
+.articles {
+    grid-column: 9/ span 1;
+}
+
+.news {
+    grid-column: 10/ span 1;
+}
+
+.company {
+    grid-column: 11/ span 1;
+}
+
+.contact {
+    grid-column: 12/ span 1;
+}
+
+.item-1 {
+    grid-column: 1/ span 2;
+}
+
+.item-2 {
+    background: #3d8bb1;
+    grid-column: 1/ span 2;
+    font-size: 1.2vw;
+}
+
+.five {
+    grid-column: 1/ span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.six {
+    grid-column: 5/span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.seven {
+    grid-column: 9/span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.eigth {
+    grid-column: 1/span 12;
+}
+
+.nine {
+    grid-column: 1/ span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.ten {
+    grid-column: 5/span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.eleven {
+    grid-column: 9/span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+
+/* img {
+    grid-column: span 6;
+    grid-row: 7/10;
+    width: 100%;
+    height: auto;
+} */
